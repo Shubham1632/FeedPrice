@@ -1,0 +1,19 @@
+{
+    "name": "PriceFeed",
+    "version": "0.01",
+    "manifest_version":2,
+    "browser_action":{
+        "default_popup":"popup.html",
+        "default_icon":"icon_eth.png"
+    },
+    "icons":{
+        "128":"icon_eth.png"
+    },
+    "permissions": ["activeTab"],
+    "content-scripts":[{
+        "css": "style.css",
+        "js": ["change.js"],
+        "matches": ["<all_urls>"],
+        "run_at": "document_end"
+    }]
+}
