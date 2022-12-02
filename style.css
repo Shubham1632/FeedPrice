@@ -1,20 +1,57 @@
 #eth{
-    color: rgb(49, 124, 24);
+    background-color: rgb(107, 246, 163);
+  background-image: radial-gradient(at 4% 36%, rgb(66, 216, 98) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(124, 254, 118) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #page{
-    border: 5px solid rgb(22, 170, 244);
+    border: 2px solid #d9cffe;
     border-radius: 15px;
     width: 280px;
     padding: 10px;
-    background-color: rgb(132, 246, 242);
+    background-color:#6b49f1;
+    background-image: 
+      radial-gradient(at 0% 0%, rgb(73, 134, 234) 0, transparent 50%), 
+      radial-gradient(at 50% 100%,rgb(33, 97, 225) 0, transparent 50%);
 }
 
 #btn{
-    background-color: rgb(24, 243, 192);
+    background-color: rgb(65, 143, 245);
+    background-image: 
+        radial-gradient(at 0% 0%, rgb(52, 243, 77) 0, transparent 50%), 
+        radial-gradient(at 50% 100%,rgb(167, 237, 206) 0, transparent 50%);
     border-radius: 5px;
+    border: 1px solid rgb(96, 96, 248);
 }
 
 body{
-    background-color: rgb(22, 170, 244);
+    background-color:#6b49f1;
+    background-image: 
+      radial-gradient(at 0% 0%, rgb(68, 44, 251) 0, transparent 50%), 
+      radial-gradient(at 50% 100%,rgb(140, 245, 234) 0, transparent 50%);
+}
+
+.text{
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+  background-image: radial-gradient(at 4% 36%, rgb(151, 248, 255) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(190, 154, 255) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo{
+  margin-right: 10px;
+  
+}
+
+#header{
+  font-size: 20px;
+  font-weight: bolder;
+    background-color: rgb(196, 243, 252);
+  background-image: radial-gradient(at 4% 36%, rgb(153, 184, 252) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(183, 145, 255) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }

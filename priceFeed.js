@@ -1,24 +1,21 @@
 const ethdata = () => {
-  fetch("https://api.coinbase.com/v2/exchange-rates?currency=ETH")
+  const doc = document.getElementById("content");
+  let htmlstring = "";
+  fetch(
+    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=10&page=1&sparkline=false"
+  )
     .then((data) => data.json())
     .then((priceData) => {
-      let eth_to_inr = priceData.data.rates.USD;
-      let ethp = Math.round(eth_to_inr);
-      let price = document.getElementById("eth");
-      price.innerHTML = ethp;
+      for (let i = 0; i < 10; i++) {
+        htmlstring += `<div> <img class="logo" src="${priceData[i].image}" alt="nothing"  height="20" width="20"> <span class="text"> ${priceData[i].name} : ${priceData[i].current_price} Rs.</span> </div> </br>`;
+      }
+      doc.innerHTML = htmlstring;
     });
 };
 
 ethdata();
 
-const changedata = () => {
-  console.log("clicked");
-  fetch("https://api.coinbase.com/v2/exchange-rates?currency=ETH")
-    .then((data) => data.json())
-    .then((priceData) => {
-      let eth_to_inr = priceData.data.rates.INR;
-      let ethp = Math.round(eth_to_inr);
-      let price = document.getElementsByTagName("button");
-      price.innerHTML = ethp;
-    });
-};
+function redirect() {
+  var url = "https://shubham1632.github.io/schange-full-stack/";
+  window.location(url);
+}
