@@ -8,7 +8,7 @@
 #page{
     border: 2px solid #d9cffe;
     border-radius: 15px;
-    width: 280px;
+    width: 310px;
     padding: 10px;
     background-color:#6b49f1;
     background-image: 
@@ -48,10 +48,18 @@ body{
 
 #header{
   font-size: 20px;
-  font-weight: bolder;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:900;
     background-color: rgb(196, 243, 252);
   background-image: radial-gradient(at 4% 36%, rgb(153, 184, 252) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(183, 145, 255) 0, transparent 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+}
+
+.change{
+  font-size: larger;
+  float: right;
+  font-weight: bolder;
+
 }
