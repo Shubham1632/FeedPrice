@@ -1,19 +1,23 @@
 {
     "name": "PriceFeed",
     "version": "0.01",
-    "manifest_version":2,
-    "browser_action":{
+    "description": "Crypto PriceFeed for the Traders",
+    "manifest_version":3,
+    "action":{
+        "default_icon": {        
+            "24":"icon_eth.png",        
+            "32":"icon_eth.png",        
+            "16":"icon_eth.png"        
+        },
         "default_popup":"popup.html",
-        "default_icon":"icon_eth.png"
+        "default_title":"PriceFeed"
     },
     "icons":{
         "128":"icon_eth.png"
     },
-    "permissions": ["activeTab"],
     "content-scripts":[{
         "css": "style.css",
         "js": ["change.js"],
-        "matches": ["<all_urls>"],
-        "run_at": "document_end"
+        "matches": ["<all_urls>"]
     }]
 }
