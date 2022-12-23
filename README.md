@@ -1,4 +1,4 @@
-<h1 align="center"> <a href="https://chrome.google.com/webstore/detail/pricefeed/aohcnddhbappclckfieileicclbpadnk">FeedPrice</a> </h1>
+<h1 align="center"> <a href="https://chrome.google.com/webstore/detail/pricefeed/aohcnddhbappclckfieileicclbpadnk" target="_blank">FeedPrice</a> </h1>
 
 <h3 align="center"> A chrome extention that shows the live price feed of various online assets </h3>
 
